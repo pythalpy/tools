@@ -1,4 +1,4 @@
-from metadata_cleaner import BatchMetadataUpdater
+from BatchMetadataUpdater import BatchMetadataUpdater
 
 local_download_directory = "/path/to/download/folder"
 
@@ -9,7 +9,3 @@ updater.prepare_file_list()
 
 # Update metadata and get log
 log = updater.update_metadata()
-
-# Print log
-for entry in log:
-    print(entry)
