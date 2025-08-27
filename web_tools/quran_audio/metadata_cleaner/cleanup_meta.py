@@ -1,7 +1,6 @@
 from metadata_cleaner import BatchMetadataUpdater
 
-# local_download_directory = "/Volumes/SD2TBSSD/HomeMedia/Audio/Quran/QuranicAudioDL082325"
-local_download_directory = "/Volumes/QURAN_AUDIO/Quran"
+local_download_directory = "/path/to/download/folder"
 
 updater = BatchMetadataUpdater(main_directory=local_download_directory, album_name="Qur'an")
 
