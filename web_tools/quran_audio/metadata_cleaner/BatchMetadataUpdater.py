@@ -139,7 +139,7 @@ class BatchMetadataUpdater:
                             f"{sura_name} "
                             f"({english_name}) "
                             f"[{revelation_place}, "
-                            f"{number_of_ayahs} Ayahs]"
+                            f"{number_of_ayahs} ayahs]"
                         )
                         audio["title"] = title
                         file_log["title_set"] = title
