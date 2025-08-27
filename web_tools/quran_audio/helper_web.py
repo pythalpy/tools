@@ -35,7 +35,11 @@ def download_file(url, subfolder_name, download_directory):
             return {"status": "error", "path": None, "error": warning_msg, "filename": None}
 
         # Build dirs
-        subfolder_path = os.path.join(download_directory, subfolder_name)
+        # Sanitize the subfolder name
+        sanitized_subfolder_name = subfolder_name.split('/')[0]
+        
+        # Build dirs
+        subfolder_path = os.path.join(download_directory, sanitized_subfolder_name)
         os.makedirs(subfolder_path, exist_ok=True)
 
         # Full file path
