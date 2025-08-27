@@ -1,4 +1,5 @@
 import os
+import json
 from mutagen.easyid3 import EasyID3
 from mutagen.id3 import ID3, ID3NoHeaderError
 
@@ -39,11 +40,12 @@ class BatchMetadataUpdater:
                 self.files_by_folder[folder] = mp3_files
 
         return self.files_by_folder
+    
 
-    def update_metadata(self):
+    def update_title_metadata(self):
         """
         Update metadata for all MP3 files in all subfolders.
-        Sets 'artist' = folder name, 'album' = self.album_name.
+        Sets the title tag based on the standardized sura names json.
         Returns:
             list: log of dictionaries for each file processed
         """
@@ -51,6 +53,21 @@ class BatchMetadataUpdater:
             self.prepare_file_list()
 
         log = []
+        # Get the directory where the script is located
+        script_dir = os.path.dirname(os.path.abspath(__file__))
+        json_file_path = os.path.join(script_dir, 'quran_surahs.json')
+        quran_surahs = {}
+
+        try:
+            with open(json_file_path, 'r', encoding='utf-8') as f:
+                surahs_list = json.load(f)
+                quran_surahs = {str(sura['id']).zfill(3): sura for sura in surahs_list}
+        except FileNotFoundError:
+            print(f"Error: JSON file not found at {json_file_path}")
+            return log
+        except json.JSONDecodeError:
+            print(f"Error: Could not decode JSON from {json_file_path}")
+            return log
 
         for folder_name, files in self.files_by_folder.items():
             for filepath in files:
@@ -59,9 +76,10 @@ class BatchMetadataUpdater:
                     "artist_set": folder_name,
                     "album_set": self.album_name,
                     "status": None,
-                    "error": None
+                    "error": None,
+                    "title_set": None
                 }
-
+                
                 try:
                     try:
                         audio = EasyID3(filepath)
@@ -70,7 +88,32 @@ class BatchMetadataUpdater:
                         audio.save(filepath)
                         audio = EasyID3(filepath)
 
-                    # Set tags
+                    filename_stem = os.path.splitext(os.path.basename(filepath))[0]
+                    
+                    if filename_stem in quran_surahs:
+                        sura_info = quran_surahs[filename_stem]
+                        
+                        sura_id = sura_info['id']
+                        sura_name = sura_info['name']
+                        english_name = sura_info['englishName']
+                        revelation_place = sura_info['revelationPlace']
+                        number_of_ayahs = sura_info['numberOfAyahs']
+                        
+                        title = (
+                            f"{sura_id:03d} - "
+                            f"{sura_name} "
+                            f"({english_name}) "
+                            f"[{revelation_place}, "
+                            f"{number_of_ayahs} Ayahs]"
+                        )
+                        audio["title"] = title
+                        file_log["title_set"] = title
+                    else:
+                        file_log["status"] = "error"
+                        file_log["error"] = "No matching surah found in JSON for filename"
+                        log.append(file_log)
+                        continue
+
                     audio["artist"] = folder_name
                     audio["album"] = self.album_name
                     audio.save()
