@@ -133,9 +133,10 @@ class BatchMetadataUpdater:
                         english_name = sura_info['englishName']
                         revelation_place = sura_info['revelationPlace']
                         number_of_ayahs = sura_info['numberOfAyahs']
+                        starting_juz = sura_info['startingJuz']
                         
                         title = (
-                            f"{sura_id:03d} - "
+                            f"{sura_id:03d} J{starting_juz} - "
                             f"{sura_name} "
                             f"({english_name}) "
                             f"[{revelation_place}, "
