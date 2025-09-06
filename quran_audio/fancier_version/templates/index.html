@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Audio Downloader</title>
+    <!-- Use Tailwind CSS for a modern look -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        select[multiple] option:checked {
+            background-color: #6366f1;
+            color: white;
+        }
+        #loading-indicator {
+            display: none;
+        }
+        @keyframes spin {
+            from {
+                transform: rotate(0deg);
+            }
+            to {
+                transform: rotate(360deg);
+            }
+        }
+        .animate-spin-fast {
+            animation: spin 0.7s linear infinite;
+        }
+    </style>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body class="bg-gray-100 flex items-center justify-center min-h-screen">
+    
+    <div class="bg-white rounded-xl shadow-2xl p-8 sm:p-12 w-full max-w-xl">
+        <h1 class="text-4xl font-extrabold text-gray-900 text-center mb-6">QuranicAudio Downloader</h1>
+        
+        <form method="post" action="/" class="space-y-6">
+            <div>
+                <label for="recitors" class="block text-sm font-medium text-gray-700 mb-1">Select a Recitor:</label>
+                <select id="recitors" name="recitors" required 
+                        class="w-full p-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-indigo-500">
+                    {% for stored_name, formatted_name in recitors.items() %}
+                    <option value="{{ stored_name }}">{{ formatted_name }}</option>
+                    {% endfor %}
+                </select>
+            </div>
+            
+            <div>
+                <label for="surahs" class="block text-sm font-medium text-gray-700 mb-1">
+                    Select Surahs
+                    <span class="text-xs text-gray-500">(Hold Ctrl/Cmd to select multiple)</span>
+                </label>
+                <select id="surahs" name="surahs" multiple size="10" required 
+                        class="w-full p-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-indigo-500">
+                    {% for number, name in surahs.items() %}
+                    <option value="{{ number }}">{{ number }}. {{ name }}</option>
+                    {% endfor %}
+                </select>
+            </div>
+            
+            <div>
+                <label for="download_dir" class="block text-sm font-medium text-gray-700 mb-1">Download Directory:</label>
+                <input type="text" id="download_dir" name="download_dir" placeholder="e.g., C:\Users\YourName\Downloads" required
+                       class="w-full p-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-indigo-500">
+            </div>
+            
+            <div>
+                <button type="submit" id="download-button"
+                        class="w-full py-3 px-4 bg-indigo-600 text-white font-semibold rounded-lg shadow-md hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 transition-colors duration-200">
+                    Start Download
+                </button>
+            </div>
+        </form>
+        
+        <!-- Loading indicator -->
+        <div id="loading-indicator" class="mt-8 text-center text-gray-500 font-semibold">
+            Downloading...
+        </div>
+
+        <!-- This container will be updated dynamically with the report -->
+        <div id="report-container" class="mt-8">
+            {% if report %}
+            <h2 class="text-2xl font-bold text-gray-800 mb-4 text-center">Download Report</h2>
+            <div id="report-data" class="bg-gray-50 p-6 rounded-lg border border-gray-200 shadow-inner">
+                {% if report is string %}
+                    <p class="text-red-600 font-semibold">{{ report }}</p>
+                {% else %}
+                    {% for reciter_data in report %}
+                        <div class="mb-6">
+                            <h3 class="text-lg font-semibold text-gray-800 mb-2">{{ reciter_data.name }}</h3>
+                            <ul class="list-none space-y-2">
+                                {% for download in reciter_data.downloads %}
+                                    <li class="flex items-center space-x-2 text-sm text-gray-700">
+                                        {% if download.status == 'success' %}
+                                            <svg class="h-5 w-5 text-green-500" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>
+                                        {% else %}
+                                            <svg class="h-5 w-5 text-red-500" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM8.707 7.293a1 1 0 00-1.414 1.414L8.586 10l-1.293 1.293a1 1 0 101.414 1.414L10 11.414l1.293 1.293a1 1 0 001.414-1.414L11.414 10l1.293-1.293a1 1 0 00-1.414-1.414L10 8.586 8.707 7.293z" clip-rule="evenodd"></path></svg>
+                                        {% endif %}
+                                        <span>{{ download.surah_name }}</span>
+                                    </li>
+                                {% endfor %}
+                            </ul>
+                        </div>
+                    {% endfor %}
+                {% endif %}
+            </div>
+            {% endif %}
+        </div>
+
+    </div>
+    
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const form = document.querySelector('form');
+            const reportContainer = document.getElementById('report-container');
+            const downloadButton = document.getElementById('download-button');
+
+            form.addEventListener('submit', async (event) => {
+                event.preventDefault();
+
+                // Get selected recitors and surahs
+                const recitorsSelect = document.getElementById('recitors');
+                const surahsSelect = document.getElementById('surahs');
+                const selectedRecitor = recitorsSelect.options[recitorsSelect.selectedIndex];
+                const selectedSurahs = Array.from(surahsSelect.selectedOptions).map(option => ({
+                    id: option.value,
+                    name: option.textContent.trim().split('. ')[1]
+                }));
+
+                // Initial UI state: disable button and clear previous report
+                downloadButton.disabled = true;
+                reportContainer.innerHTML = '';
+                
+                // Show the temporary, animated report immediately
+                const reciterName = selectedRecitor.textContent;
+                const tempReportHTML = `
+                    <h2 class="text-2xl font-bold text-gray-800 mb-4 text-center">Download Report</h2>
+                    <div id="report-data" class="bg-gray-50 p-6 rounded-lg border border-gray-200 shadow-inner">
+                        <div class="mb-6">
+                            <h3 class="text-lg font-semibold text-gray-800 mb-2">${reciterName}</h3>
+                            <ul id="surah-list" class="list-none space-y-2"></ul>
+                        </div>
+                    </div>
+                `;
+                reportContainer.innerHTML = tempReportHTML;
+                const surahList = document.getElementById('surah-list');
+
+                // Simulate progress with a small delay for each surah
+                selectedSurahs.forEach((surah, index) => {
+                    setTimeout(() => {
+                        const listItem = document.createElement('li');
+                        listItem.className = 'flex items-center space-x-2 text-sm text-gray-700';
+                        listItem.innerHTML = `
+                            <svg class="h-5 w-5 text-gray-400 animate-spin-fast" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 4v5h.582m15.549-9h.582m-5.132 12h.582m-15.549 9h.582M20 12v5h.582m-15.549 9h.582M4 4v5h.582m15.549-9h.582m-5.132 12h.582m-15.549 9h.582M20 12v5h.582m-15.549 9h.582" />
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 12V4h8l-5 5 5 5z" />
+                                <path d="M16 12h5.582m-15.549 9h.582" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                <path d="M12 20h.01M16 4h.01M4 4h.01M4 20h.01M20 4h.01M20 20h.01M4 12h.01M12 4h.01M12 20h.01M16 4h.01M4 4h.01M4 20h.01M20 4h.01M20 20h.01M4 12h.01" />
+                            </svg>
+                            <span>${surah.name} - Downloading...</span>
+                        `;
+                        surahList.appendChild(listItem);
+                    }, index * 500); // Wait 0.5s before adding the next surah
+                });
+
+                try {
+                    // Send the form data to the server and wait for the final result
+                    const formData = new FormData(form);
+                    const response = await fetch('/', {
+                        method: 'POST',
+                        body: formData,
+                    });
+
+                    // Check if the response is successful
+                    if (!response.ok) {
+                        throw new Error(`Server returned status: ${response.status}`);
+                    }
+
+                    // The server returns the full HTML page, so we parse it
+                    const htmlText = await response.text();
+                    const parser = new DOMParser();
+                    const doc = parser.parseFromString(htmlText, 'text/html');
+                    
+                    // Find the download report section in the parsed document
+                    const newReportContent = doc.getElementById('report-data');
+                    
+                    // Replace the content of the current report container with the final, real report
+                    if (newReportContent) {
+                        reportContainer.innerHTML = `
+                            <h2 class="text-2xl font-bold text-gray-800 mb-4 text-center">Download Report</h2>
+                            ${newReportContent.outerHTML}
+                        `;
+                    } else {
+                        reportContainer.innerHTML = `<p class="text-red-600 font-semibold">An unexpected error occurred. Could not find report data.</p>`;
+                    }
+                } catch (error) {
+                    reportContainer.innerHTML = `<p class="text-red-600 font-semibold">Download failed: ${error.message}</p>`;
+                    console.error('Download error:', error);
+                } finally {
+                    downloadButton.disabled = false;
+                }
+            });
+        });
+    </script>
+</body>
+</html>

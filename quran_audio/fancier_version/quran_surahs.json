@@ -1,0 +1,1028 @@
+[
+  {
+    "id": 1,
+    "name": "Al-Fatiha",
+    "englishName": "The Opening",
+    "revelationPlace": "Mecca",
+    "numberOfAyahs": 7,
+    "startingJuz": 1,
+    "endingJuz": 1
+  },
+  {
+    "id": 2,
+    "name": "Al-Baqarah",
+    "englishName": "The Cow",
+    "revelationPlace": "Medina",
+    "numberOfAyahs": 286,
+    "startingJuz": 1,
+    "endingJuz": 3
+  },
+  {
+    "id": 3,
+    "name": "Al-Imran",
+    "englishName": "The Family of 'Imran",
+    "revelationPlace": "Medina",
+    "numberOfAyahs": 200,
+    "startingJuz": 3,
+    "endingJuz": 4
+  },
+  {
+    "id": 4,
+    "name": "An-Nisa",
+    "englishName": "Women",
+    "revelationPlace": "Medina",
+    "numberOfAyahs": 176,
+    "startingJuz": 4,
+    "endingJuz": 5
+  },
+  {
+    "id": 5,
+    "name": "Al-Ma'idah",
+    "englishName": "The Feast",
+    "revelationPlace": "Medina",
+    "numberOfAyahs": 120,
+    "startingJuz": 6,
+    "endingJuz": 7
+  },
+  {
+    "id": 6,
+    "name": "Al-An'am",
+    "englishName": "Livestock",
+    "revelationPlace": "Mecca",
+    "numberOfAyahs": 165,
+    "startingJuz": 7,
+    "endingJuz": 8
+  },
+  {
+    "id": 7,
+    "name": "Al-A'raf",
+    "englishName": "The Heights",
+    "revelationPlace": "Mecca",
+    "numberOfAyahs": 206,
+    "startingJuz": 8,
+    "endingJuz": 9
+  },
+  {
+    "id": 8,
+    "name": "Al-Anfal",
+    "englishName": "Battle Gains",
+    "revelationPlace": "Medina",
+    "numberOfAyahs": 75,
+    "startingJuz": 9,
+    "endingJuz": 10
+  },
+  {
+    "id": 9,
+    "name": "At-Tawbah",
+    "englishName": "Repentance",
+    "revelationPlace": "Medina",
+    "numberOfAyahs": 129,
+    "startingJuz": 10,
+    "endingJuz": 11
+  },
+  {
+    "id": 10,
+    "name": "Yunus",
+    "englishName": "Jonah",
+    "revelationPlace": "Mecca",
+    "numberOfAyahs": 109,
+    "startingJuz": 11,
+    "endingJuz": 11
+  },
+  {
+    "id": 11,
+    "name": "Hud",
+    "englishName": "Hud",
+    "revelationPlace": "Mecca",
+    "numberOfAyahs": 123,
+    "startingJuz": 11,
+    "endingJuz": 12
+  },
+  {
+    "id": 12,
+    "name": "Yusuf",
+    "englishName": "Joseph",
+    "revelationPlace": "Mecca",
+    "numberOfAyahs": 111,
+    "startingJuz": 12,
+    "endingJuz": 13
+  },
+  {
+    "id": 13,
+    "name": "Ar-Ra'd",
+    "englishName": "Thunder",
+    "revelationPlace": "Medina",
+    "numberOfAyahs": 43,
+    "startingJuz": 13,
+    "endingJuz": 13
+  },
+  {
+    "id": 14,
+    "name": "Ibrahim",
+    "englishName": "Abraham",
+    "revelationPlace": "Mecca",
+    "numberOfAyahs": 52,
+    "startingJuz": 13,
+    "endingJuz": 13
+  },
+  {
+    "id": 15,
+    "name": "Al-Hijr",
+    "englishName": "Al-Hijr",
+    "revelationPlace": "Mecca",
+    "numberOfAyahs": 99,
+    "startingJuz": 14,
+    "endingJuz": 14
+  },
+  {
+    "id": 16,
+    "name": "An-Nahl",
+    "englishName": "The Bee",
+    "revelationPlace": "Mecca",
+    "numberOfAyahs": 128,
+    "startingJuz": 14,
+    "endingJuz": 14
+  },
+  {
+    "id": 17,
+    "name": "Al-Isra",
+    "englishName": "The Night Journey",
+    "revelationPlace": "Mecca",
+    "numberOfAyahs": 111,
+    "startingJuz": 15,
+    "endingJuz": 15
+  },
+  {
+    "id": 18,
+    "name": "Al-Kahf",
+    "englishName": "The Cave",
+    "revelationPlace": "Mecca",
+    "numberOfAyahs": 110,
+    "startingJuz": 15,
+    "endingJuz": 16
+  },
+  {
+    "id": 19,
+    "name": "Maryam",
+    "englishName": "Mary",
+    "revelationPlace": "Mecca",
+    "numberOfAyahs": 98,
+    "startingJuz": 16,
+    "endingJuz": 16
+  },
+  {
+    "id": 20,
+    "name": "Ta-Ha",
+    "englishName": "Ta Ha",
+    "revelationPlace": "Mecca",
+    "numberOfAyahs": 135,
+    "startingJuz": 16,
+    "endingJuz": 16
+  },
+  {
+    "id": 21,
+    "name": "Al-Anbiya",
+    "englishName": "The Prophets",
+    "revelationPlace": "Mecca",
+    "numberOfAyahs": 112,
+    "startingJuz": 17,
+    "endingJuz": 17
+  },
+  {
+    "id": 22,
+    "name": "Al-Hajj",
+    "englishName": "The Pilgrimage",
+    "revelationPlace": "Medina",
+    "numberOfAyahs": 78,
+    "startingJuz": 17,
+    "endingJuz": 17
+  },
+  {
+    "id": 23,
+    "name": "Al-Muminun",
+    "englishName": "The Believers",
+    "revelationPlace": "Mecca",
+    "numberOfAyahs": 118,
+    "startingJuz": 18,
+    "endingJuz": 19
+  },
+  {
+    "id": 24,
+    "name": "An-Nur",
+    "englishName": "Light",
+    "revelationPlace": "Medina",
+    "numberOfAyahs": 64,
+    "startingJuz": 18,
+    "endingJuz": 18
+  },
+  {
+    "id": 25,
+    "name": "Al-Furqan",
+    "englishName": "The Differentiator",
+    "revelationPlace": "Mecca",
+    "numberOfAyahs": 77,
+    "startingJuz": 18,
+    "endingJuz": 19
+  },
+  {
+    "id": 26,
+    "name": "Ash-Shu'ara",
+    "englishName": "The Poets",
+    "revelationPlace": "Mecca",
+    "numberOfAyahs": 227,
+    "startingJuz": 19,
+    "endingJuz": 19
+  },
+  {
+    "id": 27,
+    "name": "An-Naml",
+    "englishName": "The Ants",
+    "revelationPlace": "Mecca",
+    "numberOfAyahs": 93,
+    "startingJuz": 19,
+    "endingJuz": 20
+  },
+  {
+    "id": 28,
+    "name": "Al-Qasas",
+    "englishName": "The Story",
+    "revelationPlace": "Mecca",
+    "numberOfAyahs": 88,
+    "startingJuz": 20,
+    "endingJuz": 20
+  },
+  {
+    "id": 29,
+    "name": "Al-Ankabut",
+    "englishName": "The Spider",
+    "revelationPlace": "Mecca",
+    "numberOfAyahs": 69,
+    "startingJuz": 20,
+    "endingJuz": 21
+  },
+  {
+    "id": 30,
+    "name": "Ar-Rum",
+    "englishName": "The Byzantines",
+    "revelationPlace": "Mecca",
+    "numberOfAyahs": 60,
+    "startingJuz": 21,
+    "endingJuz": 21
+  },
+  {
+    "id": 31,
+    "name": "Luqman",
+    "englishName": "Luqman",
+    "revelationPlace": "Mecca",
+    "numberOfAyahs": 34,
+    "startingJuz": 21,
+    "endingJuz": 21
+  },
+  {
+    "id": 32,
+    "name": "As-Sajda",
+    "englishName": "Bowing down in Worship",
+    "revelationPlace": "Mecca",
+    "numberOfAyahs": 30,
+    "startingJuz": 21,
+    "endingJuz": 21
+  },
+  {
+    "id": 33,
+    "name": "Al-Ahzab",
+    "englishName": "The Joint Forces",
+    "revelationPlace": "Medina",
+    "numberOfAyahs": 73,
+    "startingJuz": 21,
+    "endingJuz": 22
+  },
+  {
+    "id": 34,
+    "name": "Saba",
+    "englishName": "Sheba",
+    "revelationPlace": "Mecca",
+    "numberOfAyahs": 54,
+    "startingJuz": 22,
+    "endingJuz": 22
+  },
+  {
+    "id": 35,
+    "name": "Fatir",
+    "englishName": "The Creator",
+    "revelationPlace": "Mecca",
+    "numberOfAyahs": 45,
+    "startingJuz": 22,
+    "endingJuz": 22
+  },
+  {
+    "id": 36,
+    "name": "Ya-Sin",
+    "englishName": "Ya Sin",
+    "revelationPlace": "Mecca",
+    "numberOfAyahs": 83,
+    "startingJuz": 22,
+    "endingJuz": 23
+  },
+  {
+    "id": 37,
+    "name": "As-Saffat",
+    "englishName": "Ranged in Rows",
+    "revelationPlace": "Mecca",
+    "numberOfAyahs": 182,
+    "startingJuz": 23,
+    "endingJuz": 23
+  },
+  {
+    "id": 38,
+    "name": "Sad",
+    "englishName": "Sad",
+    "revelationPlace": "Mecca",
+    "numberOfAyahs": 88,
+    "startingJuz": 23,
+    "endingJuz": 23
+  },
+  {
+    "id": 39,
+    "name": "Az-Zumar",
+    "englishName": "The Throngs",
+    "revelationPlace": "Mecca",
+    "numberOfAyahs": 75,
+    "startingJuz": 23,
+    "endingJuz": 24
+  },
+  {
+    "id": 40,
+    "name": "Ghafir",
+    "englishName": "The Forgiver",
+    "revelationPlace": "Mecca",
+    "numberOfAyahs": 85,
+    "startingJuz": 24,
+    "endingJuz": 24
+  },
+  {
+    "id": 41,
+    "name": "Fussilat",
+    "englishName": "[Verses] Made Distinct",
+    "revelationPlace": "Mecca",
+    "numberOfAyahs": 54,
+    "startingJuz": 24,
+    "endingJuz": 25
+  },
+  {
+    "id": 42,
+    "name": "Ash-Shura",
+    "englishName": "Consultation",
+    "revelationPlace": "Mecca",
+    "numberOfAyahs": 53,
+    "startingJuz": 25,
+    "endingJuz": 25
+  },
+  {
+    "id": 43,
+    "name": "Az-Zukhruf",
+    "englishName": "Ornaments of Gold",
+    "revelationPlace": "Mecca",
+    "numberOfAyahs": 89,
+    "startingJuz": 25,
+    "endingJuz": 25
+  },
+  {
+    "id": 44,
+    "name": "Ad-Dukhan",
+    "englishName": "Smoke",
+    "revelationPlace": "Mecca",
+    "numberOfAyahs": 59,
+    "startingJuz": 25,
+    "endingJuz": 25
+  },
+  {
+    "id": 45,
+    "name": "Al-Jathiyah",
+    "englishName": "Kneeling",
+    "revelationPlace": "Mecca",
+    "numberOfAyahs": 37,
+    "startingJuz": 25,
+    "endingJuz": 25
+  },
+  {
+    "id": 46,
+    "name": "Al-Ahqaf",
+    "englishName": "The Sand Dunes",
+    "revelationPlace": "Mecca",
+    "numberOfAyahs": 35,
+    "startingJuz": 26,
+    "endingJuz": 27
+  },
+  {
+    "id": 47,
+    "name": "Muhammad",
+    "englishName": "Muhammad",
+    "revelationPlace": "Medina",
+    "numberOfAyahs": 38,
+    "startingJuz": 26,
+    "endingJuz": 26
+  },
+  {
+    "id": 48,
+    "name": "Al-Fath",
+    "englishName": "Triumph",
+    "revelationPlace": "Medina",
+    "numberOfAyahs": 29,
+    "startingJuz": 26,
+    "endingJuz": 26
+  },
+  {
+    "id": 49,
+    "name": "Al-Hujurat",
+    "englishName": "The Private Rooms",
+    "revelationPlace": "Medina",
+    "numberOfAyahs": 18,
+    "startingJuz": 26,
+    "endingJuz": 26
+  },
+  {
+    "id": 50,
+    "name": "Qaf",
+    "englishName": "Qaf",
+    "revelationPlace": "Mecca",
+    "numberOfAyahs": 45,
+    "startingJuz": 26,
+    "endingJuz": 26
+  },
+  {
+    "id": 51,
+    "name": "Adh-Dhariyat",
+    "englishName": "Scattering [Winds]",
+    "revelationPlace": "Mecca",
+    "numberOfAyahs": 60,
+    "startingJuz": 26,
+    "endingJuz": 27
+  },
+  {
+    "id": 52,
+    "name": "At-Tur",
+    "englishName": "The Mountain",
+    "revelationPlace": "Mecca",
+    "numberOfAyahs": 49,
+    "startingJuz": 27,
+    "endingJuz": 27
+  },
+  {
+    "id": 53,
+    "name": "An-Najm",
+    "englishName": "The Star",
+    "revelationPlace": "Mecca",
+    "numberOfAyahs": 62,
+    "startingJuz": 27,
+    "endingJuz": 27
+  },
+  {
+    "id": 54,
+    "name": "Al-Qamar",
+    "englishName": "The Moon",
+    "revelationPlace": "Mecca",
+    "numberOfAyahs": 55,
+    "startingJuz": 27,
+    "endingJuz": 27
+  },
+  {
+    "id": 55,
+    "name": "Ar-Rahman",
+    "englishName": "The Lord of Mercy",
+    "revelationPlace": "Medina",
+    "numberOfAyahs": 78,
+    "startingJuz": 27,
+    "endingJuz": 27
+  },
+  {
+    "id": 56,
+    "name": "Al-Waqi'ah",
+    "englishName": "That which is Coming",
+    "revelationPlace": "Mecca",
+    "numberOfAyahs": 96,
+    "startingJuz": 27,
+    "endingJuz": 27
+  },
+  {
+    "id": 57,
+    "name": "Al-Hadid",
+    "englishName": "Iron",
+    "revelationPlace": "Medina",
+    "numberOfAyahs": 29,
+    "startingJuz": 27,
+    "endingJuz": 27
+  },
+  {
+    "id": 58,
+    "name": "Al-Mujadila",
+    "englishName": "The Dispute",
+    "revelationPlace": "Medina",
+    "numberOfAyahs": 22,
+    "startingJuz": 28,
+    "endingJuz": 28
+  },
+  {
+    "id": 59,
+    "name": "Al-Hashr",
+    "englishName": "The Gathering [of Forces]",
+    "revelationPlace": "Medina",
+    "numberOfAyahs": 24,
+    "startingJuz": 28,
+    "endingJuz": 28
+  },
+  {
+    "id": 60,
+    "name": "Al-Mumtahanah",
+    "englishName": "Women Tested",
+    "revelationPlace": "Medina",
+    "numberOfAyahs": 13,
+    "startingJuz": 28,
+    "endingJuz": 28
+  },
+  {
+    "id": 61,
+    "name": "As-Saff",
+    "englishName": "Solid Lines",
+    "revelationPlace": "Medina",
+    "numberOfAyahs": 14,
+    "startingJuz": 28,
+    "endingJuz": 28
+  },
+  {
+    "id": 62,
+    "name": "Al-Jumu'ah",
+    "englishName": "The Day of Congregation",
+    "revelationPlace": "Medina",
+    "numberOfAyahs": 11,
+    "startingJuz": 28,
+    "endingJuz": 28
+  },
+  {
+    "id": 63,
+    "name": "Al-Munafiqun",
+    "englishName": "The Hypocrites",
+    "revelationPlace": "Medina",
+    "numberOfAyahs": 11,
+    "startingJuz": 28,
+    "endingJuz": 28
+  },
+  {
+    "id": 64,
+    "name": "At-Taghabun",
+    "englishName": "Mutual Neglect",
+    "revelationPlace": "Medina",
+    "numberOfAyahs": 18,
+    "startingJuz": 28,
+    "endingJuz": 28
+  },
+  {
+    "id": 65,
+    "name": "At-Talaq",
+    "englishName": "Divorce",
+    "revelationPlace": "Medina",
+    "numberOfAyahs": 12,
+    "startingJuz": 28,
+    "endingJuz": 28
+  },
+  {
+    "id": 66,
+    "name": "At-Tahrim",
+    "englishName": "Prohibition",
+    "revelationPlace": "Medina",
+    "numberOfAyahs": 12,
+    "startingJuz": 28,
+    "endingJuz": 28
+  },
+  {
+    "id": 67,
+    "name": "Al-Mulk",
+    "englishName": "Control",
+    "revelationPlace": "Mecca",
+    "numberOfAyahs": 30,
+    "startingJuz": 29,
+    "endingJuz": 29
+  },
+  {
+    "id": 68,
+    "name": "Al-Qalam",
+    "englishName": "The Pen",
+    "revelationPlace": "Mecca",
+    "numberOfAyahs": 52,
+    "startingJuz": 29,
+    "endingJuz": 29
+  },
+  {
+    "id": 69,
+    "name": "Al-Haqqah",
+    "englishName": "The Inevitable Hour",
+    "revelationPlace": "Mecca",
+    "numberOfAyahs": 52,
+    "startingJuz": 29,
+    "endingJuz": 29
+  },
+  {
+    "id": 70,
+    "name": "Al-Ma'arij",
+    "englishName": "The Ways of Ascent",
+    "revelationPlace": "Mecca",
+    "numberOfAyahs": 44,
+    "startingJuz": 29,
+    "endingJuz": 29
+  },
+  {
+    "id": 71,
+    "name": "Nuh",
+    "englishName": "Noah",
+    "revelationPlace": "Mecca",
+    "numberOfAyahs": 28,
+    "startingJuz": 29,
+    "endingJuz": 29
+  },
+  {
+    "id": 72,
+    "name": "Al-Jinn",
+    "englishName": "The Jinn",
+    "revelationPlace": "Mecca",
+    "numberOfAyahs": 28,
+    "startingJuz": 29,
+    "endingJuz": 29
+  },
+  {
+    "id": 73,
+    "name": "Al-Muzzammil",
+    "englishName": "Enfolded",
+    "revelationPlace": "Mecca",
+    "numberOfAyahs": 20,
+    "startingJuz": 29,
+    "endingJuz": 29
+  },
+  {
+    "id": 74,
+    "name": "Al-Muddaththir",
+    "englishName": "Wrapped in his Cloak",
+    "revelationPlace": "Mecca",
+    "numberOfAyahs": 56,
+    "startingJuz": 29,
+    "endingJuz": 29
+  },
+  {
+    "id": 75,
+    "name": "Al-Qiyamah",
+    "englishName": "The Resurrection",
+    "revelationPlace": "Mecca",
+    "numberOfAyahs": 40,
+    "startingJuz": 29,
+    "endingJuz": 29
+  },
+  {
+    "id": 76,
+    "name": "Al-Insan",
+    "englishName": "Man",
+    "revelationPlace": "Medina",
+    "numberOfAyahs": 31,
+    "startingJuz": 29,
+    "endingJuz": 29
+  },
+  {
+    "id": 77,
+    "name": "Al-Mursalat",
+    "englishName": "[Winds] Sent Forth",
+    "revelationPlace": "Mecca",
+    "numberOfAyahs": 50,
+    "startingJuz": 29,
+    "endingJuz": 29
+  },
+  {
+    "id": 78,
+    "name": "An-Naba",
+    "englishName": "The Announcement",
+    "revelationPlace": "Mecca",
+    "numberOfAyahs": 40,
+    "startingJuz": 30,
+    "endingJuz": 30
+  },
+  {
+    "id": 79,
+    "name": "An-Nazi'at",
+    "englishName": "The Forceful Chargers",
+    "revelationPlace": "Mecca",
+    "numberOfAyahs": 46,
+    "startingJuz": 30,
+    "endingJuz": 30
+  },
+  {
+    "id": 80,
+    "name": "Abasa",
+    "englishName": "He Frowned",
+    "revelationPlace": "Mecca",
+    "numberOfAyahs": 42,
+    "startingJuz": 30,
+    "endingJuz": 30
+  },
+  {
+    "id": 81,
+    "name": "At-Takwir",
+    "englishName": "Shrouded in Darkness",
+    "revelationPlace": "Mecca",
+    "numberOfAyahs": 29,
+    "startingJuz": 30,
+    "endingJuz": 30
+  },
+  {
+    "id": 82,
+    "name": "Al-Infitar",
+    "englishName": "Torn Apart",
+    "revelationPlace": "Mecca",
+    "numberOfAyahs": 19,
+    "startingJuz": 30,
+    "endingJuz": 30
+  },
+  {
+    "id": 83,
+    "name": "Al-Mutaffifin",
+    "englishName": "Those who Give Short Measure",
+    "revelationPlace": "Mecca",
+    "numberOfAyahs": 36,
+    "startingJuz": 30,
+    "endingJuz": 30
+  },
+  {
+    "id": 84,
+    "name": "Al-Inshiqaq",
+    "englishName": "Ripped Apart",
+    "revelationPlace": "Mecca",
+    "numberOfAyahs": 25,
+    "startingJuz": 30,
+    "endingJuz": 30
+  },
+  {
+    "id": 85,
+    "name": "Al-Buruj",
+    "englishName": "The Towering Constellations",
+    "revelationPlace": "Mecca",
+    "numberOfAyahs": 22,
+    "startingJuz": 30,
+    "endingJuz": 30
+  },
+  {
+    "id": 86,
+    "name": "At-Tariq",
+    "englishName": "The Night-Comer",
+    "revelationPlace": "Mecca",
+    "numberOfAyahs": 17,
+    "startingJuz": 30,
+    "endingJuz": 30
+  },
+  {
+    "id": 87,
+    "name": "Al-Ala",
+    "englishName": "The Most High",
+    "revelationPlace": "Mecca",
+    "numberOfAyahs": 19,
+    "startingJuz": 30,
+    "endingJuz": 30
+  },
+  {
+    "id": 88,
+    "name": "Al-Ghashiyah",
+    "englishName": "The Overwhelming Event",
+    "revelationPlace": "Mecca",
+    "numberOfAyahs": 26,
+    "startingJuz": 30,
+    "endingJuz": 30
+  },
+  {
+    "id": 89,
+    "name": "Al-Fajr",
+    "englishName": "Daybreak",
+    "revelationPlace": "Mecca",
+    "numberOfAyahs": 30,
+    "startingJuz": 30,
+    "endingJuz": 30
+  },
+  {
+    "id": 90,
+    "name": "Al-Balad",
+    "englishName": "The City",
+    "revelationPlace": "Mecca",
+    "numberOfAyahs": 20,
+    "startingJuz": 30,
+    "endingJuz": 30
+  },
+  {
+    "id": 91,
+    "name": "Ash-Shams",
+    "englishName": "The Sun",
+    "revelationPlace": "Mecca",
+    "numberOfAyahs": 15,
+    "startingJuz": 30,
+    "endingJuz": 30
+  },
+  {
+    "id": 92,
+    "name": "Al-Layl",
+    "englishName": "The Night",
+    "revelationPlace": "Mecca",
+    "numberOfAyahs": 21,
+    "startingJuz": 30,
+    "endingJuz": 30
+  },
+  {
+    "id": 93,
+    "name": "Ad-Duha",
+    "englishName": "The Morning Brightness",
+    "revelationPlace": "Mecca",
+    "numberOfAyahs": 11,
+    "startingJuz": 30,
+    "endingJuz": 30
+  },
+  {
+    "id": 94,
+    "name": "Ash-Sharh",
+    "englishName": "Relief",
+    "revelationPlace": "Mecca",
+    "numberOfAyahs": 8,
+    "startingJuz": 30,
+    "endingJuz": 30
+  },
+  {
+    "id": 95,
+    "name": "At-Tin",
+    "englishName": "The Fig",
+    "revelationPlace": "Mecca",
+    "numberOfAyahs": 8,
+    "startingJuz": 30,
+    "endingJuz": 30
+  },
+  {
+    "id": 96,
+    "name": "Al-Alaq",
+    "englishName": "The Clinging Form",
+    "revelationPlace": "Mecca",
+    "numberOfAyahs": 19,
+    "startingJuz": 30,
+    "endingJuz": 30
+  },
+  {
+    "id": 97,
+    "name": "Al-Qadr",
+    "englishName": "The Night of Glory",
+    "revelationPlace": "Mecca",
+    "numberOfAyahs": 5,
+    "startingJuz": 30,
+    "endingJuz": 30
+  },
+  {
+    "id": 98,
+    "name": "Al-Bayyinah",
+    "englishName": "Clear Evidence",
+    "revelationPlace": "Medina",
+    "numberOfAyahs": 8,
+    "startingJuz": 30,
+    "endingJuz": 30
+  },
+  {
+    "id": 99,
+    "name": "Az-Zalzalah",
+    "englishName": "The Earthquake",
+    "revelationPlace": "Medina",
+    "numberOfAyahs": 8,
+    "startingJuz": 30,
+    "endingJuz": 30
+  },
+  {
+    "id": 100,
+    "name": "Al-Adiyat",
+    "englishName": "The Charging Steeds",
+    "revelationPlace": "Mecca",
+    "numberOfAyahs": 11,
+    "startingJuz": 30,
+    "endingJuz": 30
+  },
+  {
+    "id": 101,
+    "name": "Al-Qari'ah",
+    "englishName": "The Crashing Blow",
+    "revelationPlace": "Mecca",
+    "numberOfAyahs": 11,
+    "startingJuz": 30,
+    "endingJuz": 30
+  },
+  {
+    "id": 102,
+    "name": "At-Takathur",
+    "englishName": "Striving for More",
+    "revelationPlace": "Mecca",
+    "numberOfAyahs": 8,
+    "startingJuz": 30,
+    "endingJuz": 30
+  },
+  {
+    "id": 103,
+    "name": "Al-Asr",
+    "englishName": "The Declining Day",
+    "revelationPlace": "Mecca",
+    "numberOfAyahs": 3,
+    "startingJuz": 30,
+    "endingJuz": 30
+  },
+  {
+    "id": 104,
+    "name": "Al-Humazah",
+    "englishName": "The Backbiter",
+    "revelationPlace": "Mecca",
+    "numberOfAyahs": 9,
+    "startingJuz": 30,
+    "endingJuz": 30
+  },
+  {
+    "id": 105,
+    "name": "Al-Fil",
+    "englishName": "The Elephant",
+    "revelationPlace": "Mecca",
+    "numberOfAyahs": 5,
+    "startingJuz": 30,
+    "endingJuz": 30
+  },
+  {
+    "id": 106,
+    "name": "Quraish",
+    "englishName": "Quraysh",
+    "revelationPlace": "Mecca",
+    "numberOfAyahs": 4,
+    "startingJuz": 30,
+    "endingJuz": 30
+  },
+  {
+    "id": 107,
+    "name": "Al-Ma'un",
+    "englishName": "Common Kindness",
+    "revelationPlace": "Mecca",
+    "numberOfAyahs": 7,
+    "startingJuz": 30,
+    "endingJuz": 30
+  },
+  {
+    "id": 108,
+    "name": "Al-Kawthar",
+    "englishName": "Abundance",
+    "revelationPlace": "Mecca",
+    "numberOfAyahs": 3,
+    "startingJuz": 30,
+    "endingJuz": 30
+  },
+  {
+    "id": 109,
+    "name": "Al-Kafirun",
+    "englishName": "The Disbelievers",
+    "revelationPlace": "Mecca",
+    "numberOfAyahs": 6,
+    "startingJuz": 30,
+    "endingJuz": 30
+  },
+  {
+    "id": 110,
+    "name": "An-Nasr",
+    "englishName": "Help",
+    "revelationPlace": "Medina",
+    "numberOfAyahs": 3,
+    "startingJuz": 30,
+    "endingJuz": 30
+  },
+  {
+    "id": 111,
+    "name": "Al-Masad",
+    "englishName": "Palm Fibre",
+    "revelationPlace": "Mecca",
+    "numberOfAyahs": 5,
+    "startingJuz": 30,
+    "endingJuz": 30
+  },
+  {
+    "id": 112,
+    "name": "Al-Ikhlas",
+    "englishName": "Purity [of Faith]",
+    "revelationPlace": "Mecca",
+    "numberOfAyahs": 4,
+    "startingJuz": 30,
+    "endingJuz": 30
+  },
+  {
+    "id": 113,
+    "name": "Al-Falaq",
+    "englishName": "Daybreak",
+    "revelationPlace": "Mecca",
+    "numberOfAyahs": 5,
+    "startingJuz": 30,
+    "endingJuz": 30
+  },
+  {
+    "id": 114,
+    "name": "An-Nas",
+    "englishName": "People",
+    "revelationPlace": "Mecca",
+    "numberOfAyahs": 6,
+    "startingJuz": 30,
+    "endingJuz": 30
+  }
+]
